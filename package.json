@@ -1,6 +1,6 @@
 {
   "name": "om-nestjs-common",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nest common",
   "main": "dists/index.js",
   "types": "dist/index.d.ts",
