@@ -10,9 +10,9 @@
     "format": "prettier \"**/*.ts\" \"**/*.json\" --ignore-path ./.prettierignore --write && git status",
     "lint": "tslint -p tsconfig.json",
     "preversion": "npm run lint",
-    "version": "npm run format && git add -A .",
+    "version": "npm run format && git add -A . && git commit -m \"chore: format\"",
     "postversion": "git push && git push --tags",
-    "publish": "npm run build && npm publish --access public"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,4 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsArray } from 'class-validator';
 import { EsPageMetaDto } from './es-page-meta.dto';
 
 export class EsPageDto<T> {
