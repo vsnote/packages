@@ -12,7 +12,7 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A",
     "postversion": "git push && git push --tags",
-    "publish": "npm run build && publish --force-publish --access public --exact -m \"chore(@nestjs) publish %s release\""
+    "publish": "npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,10 @@
   },
   "author": "votan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vsnote/packages/issues"
+  },
+  "homepage": "https://github.com/vsnote/packages#readme",
   "dependencies": {
     "@fleekhq/fleek-storage-js": "^1.0.24",
     "@nestjs/common": "^9.3.9",
