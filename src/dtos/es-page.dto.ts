@@ -3,7 +3,6 @@ import { IsArray } from 'class-validator';
 import { EsPageMetaDto } from './es-page-meta.dto';
 
 export class EsPageDto<T> {
-  @IsArray()
   @ApiProperty({ isArray: true })
   readonly data: T[];
 

@@ -4,12 +4,12 @@ import { IsInt, IsOptional, IsString } from 'class-validator';
 export class EsPageOptionsDto {
   @ApiProperty({ description: '链 ID' })
   @IsInt()
-  readonly chainId!: number;
+  readonly chainId: number;
 
   @ApiPropertyOptional({ description: '分页标识' })
   @IsString()
   @IsOptional()
-  public lastSort!: string;
+  public lastSort: string;
 
   @ApiPropertyOptional({
     description: '分页数量',
