@@ -2,7 +2,7 @@
   "name": "om-nestjs-common",
   "version": "0.0.2",
   "description": "Nest common",
-  "main": "dists/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -b -v",
