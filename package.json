@@ -11,8 +11,12 @@
     "lint": "tslint -p tsconfig.json",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A",
-    "postversion": "git push origin master && git push --tags",
-    "publish": "npm run build:prod && publish --force-publish --access public --exact -m \"chore(@nestjs) publish %s release\""
+    "postversion": "git push && git push --tags",
+    "publish": "npm run build && publish --force-publish --access public --exact -m \"chore(@nestjs) publish %s release\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vsnote/packages.git"
   },
   "author": "votan",
   "license": "ISC",
