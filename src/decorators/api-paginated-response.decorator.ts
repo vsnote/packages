@@ -2,10 +2,7 @@ import { applyDecorators, Type } from '@nestjs/common';
 import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger';
 import { PageDto } from '../dtos/page.dto';
 
-export function ApiPaginatedResponse<T extends Type>(options: {
-  type: () => T;
-  description?: string;
-}): MethodDecorator {
+export function ApiPaginatedResponse<T extends Type>(options: { type: T; description?: string }): MethodDecorator {
   return applyDecorators(
     ApiExtraModels(() => PageDto),
     ApiExtraModels(options.type),
