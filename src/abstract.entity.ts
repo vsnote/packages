@@ -32,8 +32,4 @@ export abstract class AbstractEntity extends BaseEntity {
   @DeleteDateColumn()
   @Exclude()
   public deletedAt: Date;
-
-  toDto() {
-    return this;
-  }
 }
