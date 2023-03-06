@@ -5,7 +5,7 @@ export class PageDto<T> {
   @ApiProperty({ isArray: true })
   readonly data: T[];
 
-  @ApiProperty({ enum: () => PageMetaDto })
+  @ApiProperty()
   readonly meta: PageMetaDto;
 
   constructor(data: T[], meta: PageMetaDto) {

@@ -4,7 +4,7 @@ import { PageDto } from '../dtos/page.dto';
 
 export const ApiPaginatedResponse = <TModel extends Type<any>>(model: TModel) => {
   return applyDecorators(
-    ApiExtraModels(PageDto, model),
+    ApiExtraModels(() => PageDto, model),
     ApiOkResponse({
       description: 'Successfully received model list',
       schema: {
